@@ -28,7 +28,7 @@ Remplissez les informations relatives à la campagne, y compris la période d'ex
 <div style="text-align: center;">  <figure>  <img src="https://raw.githubusercontent.com/younesnajjar/smart-vacc/main/SmartVacc-Images/NewC-2.jpg?token=GHSAT0AAAAAACOFIKIAIZRVW45UEAHOPJ3QZOLUQRA" alt="Écran de connexion" width="40%" style="max-width: 50%; height: auto;">   </figure>  </div>
 <div style="text-align: center;">  <figure>  <img src="https://raw.githubusercontent.com/younesnajjar/smart-vacc/main/SmartVacc-Images/NewC-4.jpg?token=GHSAT0AAAAAACOFIKIBAVHAS6UJSWSQQDIKZOLUSNA" alt="Écran de connexion" width="40%" style="max-width: 50%; height: auto;">   </figure>  </div>
 Note: Les paramètres de campagne peuvent être modifiés à tout moment pour s'adapter à vos besoins évolutifs.
-<div style="text-align: center;">  <figure>  <img src="https://raw.githubusercontent.com/younesnajjar/smart-vacc/main/SmartVacc-Images/Cexample.jpg?token=GHSAT0AAAAAACOFIKIB4EGYDLMQRA6DCUTKZOLUPOA" alt="Écran de connexion" width="40%" style="max-width: 50%; height: auto;">   </figure>  </div>
+<div style="text-align: center;">  <figure>  <img src="https://raw.githubusercontent.com/younesnajjar/smartVaccSimpleTuto/9806c2aea0a35c819c6b9c392d0b03204549b9a9/SmartVacc-Images/Cexample.jpg" alt="Écran de connexion" width="40%" style="max-width: 50%; height: auto;">   </figure>  </div>
 
 ## Enregistrement des Données
 Pour documenter les vaccinations :
