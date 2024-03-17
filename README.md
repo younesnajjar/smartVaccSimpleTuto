@@ -32,6 +32,7 @@ Note: Les paramètres de campagne peuvent être modifiés à tout moment pour s'
 
 ## Enregistrement des Données
 Pour documenter les vaccinations :
+
 1/ Sélectionnez l'option d'ajout pour intégrer un douar à votre campagne.
 <div style="text-align: center;">  <figure>  <img src="https://raw.githubusercontent.com/younesnajjar/smartVaccSimpleTuto/main/SmartVacc-Images/Douar.jpg" alt="Écran de connexion" width="40%" style="max-width: 50%; height: auto;">   </figure>  </div>
 2/ Complétez les détails relatifs à la fraction et la qaidat du douar.
