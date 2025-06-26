@@ -1,0 +1,236 @@
+/* Features Carousel Styles */
+.features-carousel {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 600px;
+    position: relative;
+}
+
+.features-carousel .carousel-cell {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+}
+
+.feature-slide {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-slide:hover {
+    transform: translateY(-5px);
+}
+
+.feature-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #47b0df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.feature-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.feature-slide:hover .feature-image img {
+    transform: scale(1.05);
+}
+
+.feature-content {
+    flex: 1;
+    padding: 3rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.feature-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #212B35;
+    margin-bottom: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.feature-description {
+    font-size: 1.1rem;
+    color: #526b84;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.feature-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-benefits li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #526b84;
+    line-height: 1.6;
+}
+
+.feature-benefits li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #47b0df;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.feature-benefits li:last-child {
+    margin-bottom: 0;
+}
+
+.carousel-nav {
+    margin-top: 2rem;
+}
+
+.carousel-nav-btn {
+    background: none;
+    border: 2px solid #47b0df;
+    color: #47b0df;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.carousel-nav-btn:hover,
+.carousel-nav-btn.active {
+    background: #47b0df;
+    color: white;
+}
+
+.carousel-nav-btn.active {
+    box-shadow: 0 4px 15px rgba(71, 176, 223, 0.3);
+}
+
+/* Flickity Custom Styles */
+.features-carousel .flickity-button {
+    background: rgba(71, 176, 223, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.features-carousel .flickity-button:hover {
+    background: #47b0df;
+    transform: scale(1.1);
+}
+
+.features-carousel .flickity-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(71, 176, 223, 0.3);
+}
+
+.features-carousel .flickity-button-icon {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+.features-carousel .flickity-page-dots {
+    bottom: -40px;
+}
+
+.features-carousel .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    background: #c6d1dc;
+    border-radius: 50%;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+}
+
+.features-carousel .flickity-page-dots .dot.is-selected {
+    background: #47b0df;
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-slide {
+        flex-direction: column;
+    }
+    
+    .feature-image {
+        flex: 0 0 60%;
+        padding: 1rem;
+    }
+    
+    .feature-content {
+        flex: 0 0 40%;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .feature-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .carousel-nav-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        margin: 0 0.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .features-carousel {
+        height: 450px;
+    }
+    
+    .feature-content {
+        padding: 1rem;
+    }
+    
+    .feature-title {
+        font-size: 1.25rem;
+    }
+    
+    .carousel-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .carousel-nav-btn {
+        margin: 0;
+    }
+} 

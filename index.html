@@ -22,6 +22,9 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 </head> 
 
@@ -30,191 +33,236 @@
 <!--	<div class="demo-banner py-3 text-white text-center fw-bold theme-bg-secondary text-white">Love this template? Need more page designs? <a class="btn font-weight-bold ms-2 theme-btn-on-bg mt-2 mt-md-0" href="https://themes.3rdwavemedia.com/bootstrap-templates/mobile/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fas fa-external-link-alt me-2"></i>Check out <span class="text-uppercase">Nova Pro</span></a>-->
 <!--	</div>-->
     <header class="header">
-	    
-        <div class="branding">
-            
-            <div class="container position-relative">
-
-				<nav class="navbar navbar-expand-lg" >
-                    <h1 class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon" src="assets/images/logo-1.png" alt="logo"> <span class="logo-text">SmartVacc <span class="alt rounded">Pro</span></span></a></h1>
-					
-					<!-- // Free Version ONLY -->
-					<ul class="social-list list-inline mb-0 position-absolute">
-<!--			            <li class="list-inline-item"><a class="text-dark" href="#"><i class="fab fa-twitter fa-fw"></i></a></li>-->
-<!--		                <li class="list-inline-item"><a class="text-dark" href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>-->
-<!--		                <li class="list-inline-item"><a class="text-dark" href="#"><i class="fab fa-instagram fa-fw"></i></a></li>-->
-		            </ul><!--//social-list-->
-	
-				</nav>
-				
-				<!-- // Free Version ONLY -->
-				<ul class="social-list list-inline mb-0 position-absolute d-none">
-<!--		            <li class="list-inline-item"><a class="text-dark" href="#"><i class="fab fa-twitter fa-fw"></i></a></li>-->
-<!--	                <li class="list-inline-item"><a class="text-dark" href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>-->
-<!--	                <li class="list-inline-item"><a class="text-dark" href="#"><i class="fab fa-instagram fa-fw"></i></a></li>-->
-<!--	                <li class="list-inline-item"><a class="text-dark" href="#"><i class="fab fa-youtube fa-fw"></i></a></li>-->
-	            </ul><!--//social-list-->	            
-            </div><!--//container-->            
-        </div><!--//branding-->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <!-- Logo/Brand -->
+                <a class="navbar-brand" href="/">
+                    <img class="logo-icon" src="assets/images/logo-1.png" alt="SmartVacc Logo">
+                    <span class="logo-text">SmartVacc <span class="alt rounded">Pro</span></span>
+                </a>
+                
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary theme-btn" href="#get-started">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header><!--//header-->
     
     
-    <section class="hero-section">
+    <section class="hero-section" id="home">
 	    <div class="container">
-		    <div class="row figure-holder">
-			    <div class="col-12 col-md-6 pt-3 pt-md-4">
-				    <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">SmartVacc: Votre Assistant pour la Campagne de Prophylaxie </h2>
-				    <div class="site-tagline mb-3">Révolutionnez la gestion des campagnes de vaccination vétérinaire avec SmartVacc, un outil conçu pour optimiser la précision et l'efficacité. Profitez d'une gestion de données rapide et sécurisée, d'une génération de rapports simplifiée et d'une sécurité des données sans faille. Découvrez dès maintenant comment SmartVacc transforme votre campagne de prophylaxie.</div>
+		    <div class="row align-items-center">
+			    <div class="col-12 col-lg-6 pt-3 pt-md-4">
+				    <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">SmartVacc: Digitalisez vos campagnes de prophylaxie animale</h2>
+				    <div class="site-tagline mb-4">Faites un bond en avant dans la gestion de vos campagnes de vaccination. Avec SmartVacc, réduisez les erreurs, gagnez du temps sur le terrain et simplifiez vos rapports grâce à une application mobile pensée pour les vétérinaires marocains.</div>
+				    
+				    <!-- Key Benefits as Bullet Points -->
+				    <div class="hero-benefits mb-4">
+				        <ul class="list-unstyled">
+							<li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Saisie même hors connexion, avec synchronisation automatique</li>
+							<li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Lecture intelligente (OCR) des CNIEs et boucles bovines</li>
+							<li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Suivi cartographique précis par douar et par commune</li>
+							<li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Rapports et Comptes rendus générés automatiquement en Word/Excel</li>
+				        </ul>
+				    </div>
+				    
+				    <!-- Mobile hero image (only visible on small screens) -->
+				    <div class="hero-image-mobile d-block d-lg-none text-center mb-3">
+				        <img src="assets/images/Hero_Section_Image.png" alt="SmartVacc App" class="img-fluid">
+				    </div>
+				    
 				    <div class="cta-btns">
-					    <ul class="app-stores list-unstyled list-inline mx-auto mx-md-0 d-inline-block pt-5">
-							<li class="list-inline-item"><a href="./downloads/smartVaccAndroid.apk"><img class="android" src="assets/images/android-download.png" alt="google play"></a></li>
-							<li class="list-inline-item me-3"><a class="not-available"><img class="ios" src="assets/images/appstore-badge.png" alt="app-store"></a></li>
+					    <p class="download-text mb-3">Téléchargez dès maintenant SmartVacc et transformez vos campagnes de vaccination en une expérience digitale simple, rapide et efficace. :</p>
+					    <ul class="app-stores list-unstyled list-inline mx-auto mx-lg-0 d-inline-block">
+							<li class="list-inline-item me-3 mb-2"><a href="./downloads/smartVaccAndroid.apk"><img class="android" src="assets/images/android-download.png" alt="google play"></a></li>
+							<li class="list-inline-item mb-2"><a class="not-available"><img class="ios" src="assets/images/appstore-badge.png" alt="app-store"></a></li>
 					    </ul>
+				    </div>
+			    </div>
+			    <div class="col-12 col-lg-6 d-none d-lg-block">
+				    <div class="hero-image text-center">
+				        <img src="assets/images/Hero_Section_Image.png" alt="SmartVacc App" class="img-fluid">
 				    </div>
 			    </div>
 		    </div><!--//row-->
 	    </div>
+	    
+	    <!-- Background Animal Illustrations -->
+	    <div class="hero-background-animals">
+	        <img src="assets/images/Sheep.png" alt="Sheep" class="animal-illustration sheep-illustration">
+	        <img src="assets/images/Cow1.png" alt="Cow" class="animal-illustration cow-illustration">
+	        <img src="assets/images/Cow2.png" alt="Cow" class="animal-illustration cow2-illustration">
+	        <img src="assets/images/Goats.png" alt="Goats" class="animal-illustration goats-illustration">
+	    </div>
     </section><!--//hero-section-->
     
-<!--    <section class="logos-section theme-bg-primary py-5 text-center">-->
-<!--	    <div class="container">-->
-<!--		    <h3 class="mb-5">Trusted by hundreds of software businesses</h3>-->
-<!--		    <div class="logos-row row mx-auto"> -->
-<!--	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">-->
-<!--		            <div class="item-inner">-->
-<!--		                <img src="assets/images/logos/logo-1.svg" alt="logo">-->
-<!--		            </div>&lt;!&ndash;//item-inner&ndash;&gt;-->
-<!--	            </div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">-->
-<!--		            <div class="item-inner">-->
-<!--		                <img src="assets/images/logos/logo-2.svg" alt="logo">-->
-<!--		            </div>&lt;!&ndash;//item-inner&ndash;&gt;-->
-<!--	            </div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">-->
-<!--		            <div class="item-inner">-->
-<!--		                <img src="assets/images/logos/logo-3.svg" alt="logo">-->
-<!--		            </div>&lt;!&ndash;//item-inner&ndash;&gt;-->
-<!--	            </div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">-->
-<!--		            <div class="item-inner">-->
-<!--		                <img src="assets/images/logos/logo-4.svg" alt="logo">-->
-<!--		            </div>&lt;!&ndash;//item-inner&ndash;&gt;-->
-<!--	            </div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">-->
-<!--		            <div class="item-inner">-->
-<!--		                <img src="assets/images/logos/logo-5.svg" alt="logo">-->
-<!--		            </div>&lt;!&ndash;//item-inner&ndash;&gt;-->
-<!--	            </div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">-->
-<!--		            <div class="item-inner">-->
-<!--		                <img src="assets/images/logos/logo-6.svg" alt="logo">-->
-<!--		            </div>&lt;!&ndash;//item-inner&ndash;&gt;-->
-<!--	            </div>&lt;!&ndash;//item&ndash;&gt;-->
-<!--	            -->
-<!--	        </div>-->
-<!--			    -->
-<!--	    </div>&lt;!&ndash;//container&ndash;&gt;-->
-<!--    </section>&lt;!&ndash;//logo-section&ndash;&gt;-->
-    
-    <section class="benefits-section py-5">
-	    
-	    <div class="container py-lg-5">
-		    <h3 class="mb-5 text-center font-weight-bold">Maximisez l'efficacité de vos campagnes de vaccination avec SmartVacc</h3>
-		    <div class="row">
-		        <div class="item col-12 col-lg-4">
-				    <div class="item-inner text-center p-3 p-lg-5">
-					    <img class="mb-3" src="assets/images/icon-target.svg" alt="" />
-					    <h5>Interface Intuitive et Expérience Utilisateur Optimisée</h5>
-					    <div>SmartVacc offre une interface intuitive et un parcours utilisateur optimisé pour la gestion et le suivi des campagnes de vaccination vétérinaire. </div>
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4">
-				    <div class="item-inner text-center p-3 p-lg-5">
-					    <img class="mb-3" src="assets/images/icon-rocket.svg" alt="" />
-					    <h5>Saisie post-campgne simplifiée </h5>
-					    <div>Notre application simplifie le processus de vaccination, aidant les vétérinaires à augmenter leur efficacité tout en minimisant les erreurs de saisie. </div>
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4">
-				    <div class="item-inner text-center p-3 p-lg-5">
-					    <img class="mb-3" src="assets/images/icon-cogs.svg" alt="" />
-					    <h5>Services Personnalisés</h5>
-					    <div>Avec SmartVacc, configurez et personnalisez les rapports et les statistiques selon vos besoins pour une analyse approfondie et une prise de décision éclairée. </div>
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-		    </div><!--//row-->
-		    <div class="pt-3 text-center">
-			    <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="#">Learn More</a>
-		    </div>
-	    </div>
-	    
-    </section><!--//benefits-section-->
-    
-    <section class="features-section py-5">
+    <section class="features-section py-5" id="features">
 	    <div class="container py-lg-5 position-relative">
-		    <h3 class="mb-3 text-center font-weight-bold section-heading">Fonctionnalités Clées</h3>
-		    <div class="row pt-5 mb-5">
-			    
-			    <div class="col-12 col-md-6 col-xl-5 offset-xl-1 d-none d-md-block">
-				    <img class="product-figure product-figure-1 img-fluid" src="https://raw.githubusercontent.com/younesnajjar/smartVaccSimpleTuto/main/SmartVacc-Images/GenCompterendu.jpg" alt="" />
-			    </div>
-			    
-		        <div class="col-12 col-md-6 col-xl-5 pr-xl-3 pt-md-3">
-				    <div class="card rounded border-0 shadow-lg  mb-5">
-					    <div class="card-body p-4">
-							<h5 class="card-title"><i class="far fa-chart-bar me-2 me-lg-3 text-primary fa-lg fa-fw"></i>Génération de Rapports Intuitive</h5>
-							<p class="card-text">Créez des rapports détaillés en quelques clics pour un suivi précis des campagnes de vaccination et une meilleure prise de décision. </p>
-							<a class="more-link" href="#" >Learn more <span class="more-arrow">&rarr;</span></a>
-						</div>
-				    </div><!--//card-->
-				    
-				    <div class="card rounded border-0 shadow-lg mb-5">
-					    <div class="card-body p-4">
-							<h5 class="card-title"><i class="fas fa-laptop-code me-2 me-lg-3 text-primary fa-lg fa-fw"></i>Optimisation des Campagnes de Vaccination</h5>
-							<p class="card-text">Utilisez des données statistiques pour optimiser l'organisation et l'exécution de vos campagnes, en améliorant la santé animale de manière mesurable.</p>
-							<a class="more-link" href="#" >Learn more <span class="more-arrow">&rarr;</span></a>
-						</div>
-				    </div><!--//card-->
-				    <div class="card rounded border-0 shadow-lg">
-					    <div class="card-body p-4">
-							<h5 class="card-title"><i class="far fa-calendar-alt me-2 me-lg-3 text-primary fa-lg fa-fw"></i>Gestion d'Équipe et Collaboration</h5>
-							<p class="card-text">Collaborez facilement avec votre équipe grâce à des fonctionnalités de gestion dédiées, améliorant la coordination et l'efficacité des campagnes.</p>
-							<a class="more-link" href="#" >Learn more <span class="more-arrow">&rarr;</span></a>
-						</div>
-				    </div><!--//card-->
-			    </div>
-		    </div>
+		    <h3 class="mb-5 text-center font-weight-bold section-heading">Fonctionnalités Clés</h3>
 		    
-		    <div class="row">
-			    <div class="col-12 col-md-6 col-xl-5 order-md-2 pr-xl-3 d-none d-md-block">
-				    <img class="product-figure product-figure-2 img-fluid" src="https://raw.githubusercontent.com/younesnajjar/smartVaccSimpleTuto/main/SmartVacc-Images/Statistiques.jpg" alt="" />
-			    </div>
-			    <div class="col-12 col-md-6 col-xl-5 order-md-1 offset-xl-1 pt-xl-5">
-				    <div class="card rounded border-0 shadow-lg  mb-5">
-					    <div class="card-body p-4">
-							<h5 class="card-title"><i class="fas fa-microphone-alt me-2 me-lg-3 text-primary fa-lg fa-fw"></i>Analyse Avancée des Données</h5>
-							<p class="card-text">Exploitez la puissance des données avec SmartVacc. Notre application fournit des analyses détaillées et des visualisations de données pour vous aider à prendre des décisions éclairées, optimiser vos ressources et améliorer les résultats des campagnes de vaccination. </p>
-							<a class="more-link" href="#" >Learn more <span class="more-arrow">&rarr;</span></a>
-						</div>
-				    </div><!--//card-->
-				    
-				    <div class="card rounded border-0 shadow-lg">
-					    <div class="card-body p-4">
-							<h5 class="card-title"><i class="far fa-comments me-2 me-lg-3 text-primary fa-lg fa-fw"></i>Validation par les Professionnels</h5>
-							<p class="card-text">Des vétérinaires à travers le pays ont déjà adopté SmartVacc, attestant de sa facilité d'utilisation et de son efficacité. Ils ont bénéficié de sa planification simplifiée, de son suivi précis, et de l'exécution optimisée de leurs campagnes de vaccination.</p>
-							<a class="more-link" href="#" >Learn more <span class="more-arrow">&rarr;</span></a>
-						</div>
-				    </div><!--//card-->
-			    </div>
+		    <!-- Features Carousel -->
+		    <div class="features-carousel">
+		        <div class="carousel-cell">
+		            <div class="feature-slide">
+		                <div class="feature-image">
+		                    <img src="assets/images/OCR1.jpeg" alt="OCR CNIE et Boucles" class="img-fluid">
+		                </div>
+		                <div class="feature-content">
+		                    <h4 class="feature-title">Lecture OCR Intelligente</h4>
+		                    <ul class="feature-benefits">
+		                        <li>Scan automatique des CNIEs et boucles bovines</li>
+		                        <li>Reconnaissance optique de caractères en temps réel</li>
+		                        <li>Élimination des erreurs de saisie manuelle</li>
+		                        <li>Collecte de données rapide et précise sur le terrain</li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        
+		        <div class="carousel-cell">
+		            <div class="feature-slide">
+		                <div class="feature-image">
+		                    <img src="assets/images/Hors-Ligne.jpeg" alt="Saisie Hors-ligne" class="img-fluid">
+		                </div>
+		                <div class="feature-content">
+		                    <h4 class="feature-title">Saisie Hors-ligne & Synchronisation</h4>
+		                    <ul class="feature-benefits">
+		                        <li>Fonctionne sans connexion internet</li>
+		                        <li>Sauvegarde locale et synchronisation automatique dès retour réseau</li>
+		                        <li>Continuité garantie même en zones isolées</li>
+		                        <li>Zéro interruption dans la collecte de données</li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        
+		        <div class="carousel-cell">
+		            <div class="feature-slide">
+		                <div class="feature-image feature-image-slider" id="feature-mapping-slider">
+		                    <div class="mini-carousel">
+		                        <div class="carousel-cell"><img src="assets/images/MAP1.jpeg" alt="Cartographie 1" class="img-fluid"></div>
+		                        <div class="carousel-cell"><img src="assets/images/MAP2.jpeg" alt="Cartographie 2" class="img-fluid"></div>
+		                    </div>
+		                </div>
+		                <div class="feature-content">
+		                    <h4 class="feature-title">Cartographie & Géolocalisation</h4>
+		                    <ul class="feature-benefits">
+		                        <li>Visualisez vos campagnes sur une carte interactive</li>
+		                        <li>Localisation précise par douar et commune</li>
+		                        <li>Suivi en temps réel des interventions</li>
+		                        <li>Optimisation des trajets et planification efficace</li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        
+		        <div class="carousel-cell">
+		            <div class="feature-slide">
+		                <div class="feature-image feature-image-slider" id="feature-stats-slider">
+		                    <div class="mini-carousel">
+		                        <div class="carousel-cell"><img src="assets/images/Stats1.jpeg" alt="Statistiques 1" class="img-fluid"></div>
+		                        <div class="carousel-cell"><img src="assets/images/Stats2.jpeg" alt="Statistiques 2" class="img-fluid"></div>
+		                    </div>
+		                </div>
+		                <div class="feature-content">
+		                    <h4 class="feature-title">Statistiques & Analyses Avancées</h4>
+		                    <ul class="feature-benefits">
+		                        <li>Accédez à des analyses détaillées en temps réel</li>
+		                        <li>Données exploitables pour les rapports Hebdomadaires</li>
+		                        <li>Progression et historique complet des campagnes</li>
+		                        <li>Rapports de performance personnalisés</li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        
+		        <div class="carousel-cell">
+		            <div class="feature-slide">
+		                <div class="feature-image">
+		                    <img src="assets/images/placeholder-reports.jpg" alt="Rapports" class="img-fluid">
+		                </div>
+		                <div class="feature-content">
+		                    <h4 class="feature-title">Génération Automatique des Rapports</h4>
+		                    <ul class="feature-benefits">
+		                        <li>Générez instantanément vos rapports Word et Excel</li>
+		                        <li>Conformité aux exigences de l'ONSSA</li>
+		                        <li>Formats standardisés et professionnels</li>
+		                        <li>Export en un clic pour traitement rapide</li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
 			   
+		    <!-- Carousel Navigation -->
+		    <div class="carousel-nav text-center mt-4">
+		        <button class="carousel-nav-btn active" data-slide="0">OCR</button>
+		        <button class="carousel-nav-btn" data-slide="1">Hors-ligne</button>
+		        <button class="carousel-nav-btn" data-slide="2">Cartographie</button>
+		        <button class="carousel-nav-btn" data-slide="3">Statistiques</button>
+		        <button class="carousel-nav-btn" data-slide="4">Rapports</button>
 		    </div>
 		    
 		    <div class="pt-5 text-center">
-			    <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="#">View all features</a>
+			    <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="#advantages">En savoir plus</a>
 		    </div>
 	    </div><!--//container-->
 	    
     </section><!--//features-section-->
+    
+    <section class="advantages-section py-5 theme-bg-primary" id="advantages">
+	    <div class="container py-lg-5">
+		    <h3 class="mb-5 text-center font-weight-bold">Pourquoi choisir SmartVacc ?</h3>
+		    <div class="row g-4">
+		        <div class="item col-12 col-md-6 col-lg-4">
+				    <div class="item-inner text-center p-3 p-lg-4 h-100">
+					    <img class="mb-3" src="assets/images/icon-target.svg" alt="" />
+					    <h5>Optimisez votre temps & vos ressources</h5>
+					    <div>Éliminez la paperasse manuelle et automatisez vos processus pour vous concentrer sur votre mission principale : la santé animale.</div>
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+			    <div class="item col-12 col-md-6 col-lg-4">
+				    <div class="item-inner text-center p-3 p-lg-4 h-100">
+					    <img class="mb-3" src="assets/images/icon-rocket.svg" alt="" />
+					    <h5>Soumettez plus vite & soyez payé plus tôt</h5>
+					    <div>Rapports ONSSA générés automatiquement pour une soumission fluide et sans erreurs, réduisant les délais de paiement.</div>
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+			    <div class="item col-12 col-md-6 col-lg-4">
+				    <div class="item-inner text-center p-3 p-lg-4 h-100">
+					    <img class="mb-3" src="assets/images/icon-cogs.svg" alt="" />
+					    <h5>Historique des campagnes & données géolocalisées</h5>
+					    <div>Visualisez vos interventions passées sur carte, accédez aux statistiques détaillées et bâtissez votre base de suivi par éleveur et par douar.</div>
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+		    </div><!--//row-->
+		    <div class="pt-4 text-center">
+			    <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="#" onclick="requestDemo()">Demander Démo</a>
+		    </div>
+	    </div>
+    </section><!--//advantages-section-->
     
 <!--    <section class="cta-section py-5 theme-bg-secondary text-center"> -->
 <!--	    <div class="container"> -->
@@ -369,50 +417,49 @@
     
     <footer class="footer theme-bg-primary">
 	    <div class="container py-5 mb-3">
-		    <div class="row">
-			    <div class="footer-col col-6 col-lg-3">
-				    <h4 class="col-heading">About Nova</h4>
+		    <div class="row g-4">
+			    <div class="footer-col col-12 col-sm-6 col-lg-3">
+				    <h4 class="col-heading">À propos de SmartVacc</h4>
 				    <ul class="list-unstyled">
-					    <li><a class="text-link" href="#">Our Story</a></li>
-					    <li><a class="text-link" href="#">Pricing</a></li>
+					    <li><a class="text-link" href="#">Notre Histoire</a></li>
+					    <li><a class="text-link" href="#">Tarification</a></li>
 					    <li><a class="text-link" href="#">Contact</a></li>
-					    <li><a class="text-link" href="#">Jobs</a></li>
-					    
+					    <li><a class="text-link" href="#">Carrières</a></li>
 				    </ul>
 			    </div><!--//footer-col-->
-			    <div class="footer-col col-6 col-lg-3">
-				    <h4 class="col-heading">Resources</h4>
+			    <div class="footer-col col-12 col-sm-6 col-lg-3">
+				    <h4 class="col-heading">Ressources</h4>
 				    <ul class="list-unstyled">
-					    <li><a class="text-link" href="#">FAQs</a></li>
+					    <li><a class="text-link" href="#">FAQ</a></li>
 					    <li><a class="text-link" href="#">Blog</a></li>
 					    <li><a class="text-link" href="#">Support</a></li>
-					    <li><a class="text-link" href="#">Developer APIs</a></li>
+					    <li><a class="text-link" href="#">Documentation</a></li>
 				    </ul>
 			    </div><!--//footer-col-->
-			    <div class="footer-col col-6 col-lg-3">
-				    <h4 class="col-heading">Legal</h4>
+			    <div class="footer-col col-12 col-sm-6 col-lg-3">
+				    <h4 class="col-heading">Légal</h4>
 				    <ul class="list-unstyled">
-					    <li><a class="text-link" href="#">Privacy</a></li>
-					    <li><a class="text-link" href="#">Terms of Services</a></li>
-					    <li><a class="text-link" href="#">Security</a></li>
+					    <li><a class="text-link" href="#">Confidentialité</a></li>
+					    <li><a class="text-link" href="#">Conditions d'utilisation</a></li>
+					    <li><a class="text-link" href="#">Sécurité</a></li>
 				    </ul>
 			    </div><!--//footer-col-->
-			    <div class="footer-col col-6 col-lg-3">
-				    <h4 class="col-heading">Stay Connected</h4>
-				    <ul class="social-list list-unstyled mb-0">
+			    <div class="footer-col col-12 col-sm-6 col-lg-3">
+				    <h4 class="col-heading">Restez Connecté</h4>
+				    <ul class="social-list list-unstyled mb-3">
 					    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
 		                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-youtube fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-fw"></i></a></li>
 		            </ul><!--//social-list-->
 		            
-		            <div class="mb-2">
-			            Company Name<br>
-			            2419 Locust View Drive <br>
-			            San Francisco, CA, 94143
+		            <div class="mb-2 small">
+			            SmartVacc<br>
+			            Maroc<br>
+			            Service vétérinaire digital
 		            </div>
 		            <div>
-			            <a class="text-link" href="#">hello@yourcompany.com</a>
+			            <a class="text-link" href="mailto:contact@smartvacc.ma">contact@smartvacc.ma</a>
 			        </div>
 		            
 			    </div><!--//footer-col-->
@@ -421,19 +468,8 @@
 	    <div class="container">
 		    <hr>
 	    </div>
-	    <div class="download-area py-4">
-		    <div class="container text-center">
-			    <h3 class="mb-3">Get the app</h3>
-		    <div class="section-intro mb-4 single-col-max-width mx-auto">Download our apps now. lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis. </div>
-			    <ul class="app-stores list-unstyled list-inline mx-auto  d-inline-block">
-				    <li class="list-inline-item me-3"><a href="#"><img class="ios" src="assets/images/appstore-apple.svg" alt="app-store"></a></li>
-				    <li class="list-inline-item"><a href="#"><img class="android" src="assets/images/appstore-android.svg" alt="google play"></a></li>
-			    </ul>
-		    </div><!--//container-->
-	    </div><!--//download-area-->
 	    <div class="footer-bottom text-center pb-5">
-	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">&copy; SmartVacc 2024</small>
+            <small class="copyright">&copy; SmartVacc 2024. Tous droits réservés.</small>
 	    </div>
 		
     </footer>
@@ -445,6 +481,46 @@
     <script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script> 
     <script type="text/javascript" src="assets/js/main.js"></script> 
 
+    <!-- Zoom Modal -->
+    <div id="zoomModal" class="zoom-modal" style="display:none;">
+      <div class="zoom-modal-backdrop" onclick="closeZoomModal()"></div>
+      <img id="zoomModalImg" src="" alt="Zoomed Image" class="zoom-modal-img">
+    </div>
+
+    <script>
+    // Zoom modal logic
+    function openZoomModal(src, alt) {
+      var modal = document.getElementById('zoomModal');
+      var img = document.getElementById('zoomModalImg');
+      img.src = src;
+      img.alt = alt || '';
+      modal.style.display = 'flex';
+    }
+    function closeZoomModal() {
+      document.getElementById('zoomModal').style.display = 'none';
+      // Restart autoplay for all mini-carousels
+      if (window.miniCarousels) {
+        Object.values(window.miniCarousels).forEach(function(flkty) {
+          if (flkty && typeof flkty.playPlayer === 'function') {
+            flkty.playPlayer();
+          }
+        });
+      }
+    }
+    // Attach click handlers to all feature images after DOM loads
+    window.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.feature-image img, .feature-image-slider .img-fluid').forEach(function(img) {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function(e) {
+          openZoomModal(this.src, this.alt);
+        });
+      });
+      // Close modal on Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeZoomModal();
+      });
+    });
+    </script>
 
 </body>
 </html> 
