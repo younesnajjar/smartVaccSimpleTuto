@@ -268,4 +268,18 @@ document.addEventListener('DOMContentLoaded', function() {
             friction: 0.25
         });
     }
+    var reportsSlider = document.querySelector('#feature-reports-slider .mini-carousel');
+    if (reportsSlider) {
+        miniCarousels.reports = new Flickity(reportsSlider, {
+            cellAlign: 'center',
+            contain: true,
+            prevNextButtons: false,
+            pageDots: false,
+            autoPlay: 2500,
+            wrapAround: true,
+            draggable: true,
+            selectedAttraction: 0.03,
+            friction: 0.25
+        });
+    }
 });
