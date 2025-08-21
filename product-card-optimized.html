@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartVacc - Fiche produit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background-color: #00796b;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .content-column {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .images-column {
+            flex: 0 0 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .image-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 200px; /* Limit image height */
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            object-fit: contain; /* Maintain aspect ratio */
+        }
+        
+        .image-caption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 5px;
+            color: #00796b;
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #00796b;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+            background: white;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* PDF-specific optimizations */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .image-container img {
+                max-height: 150px !important; /* Even smaller for PDF */
+                page-break-inside: avoid;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                padding: 20px;
+            }
+            
+            .images-column {
+                flex: none;
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .content-column {
+                padding: 30px;
+            }
+            
+            .image-container {
+                padding: 15px;
+            }
+            
+            .image-container img {
+                max-height: 150px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .main-container {
+                padding: 15px;
+            }
+            
+            .content-column {
+                padding: 20px;
+            }
+            
+            .images-column {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .section {
+                margin-bottom: 25px;
+            }
+            
+            .image-container img {
+                max-height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SmartVacc</h1>
+        <p>Digitalisation des campagnes de prophylaxie animale</p>
+    </div>
+    
+    <div class="main-container">
+        <div class="content-column">
+            <div class="section">
+                <h2>Contexte</h2>
+                <p>Au Maroc, les campagnes de prophylaxie animale sont encore largement réalisées à l'aide de registres papier et de processus manuels. Cela engendre une perte de temps importante sur le terrain pour noter correctement chaque intervention, complique la visualisation des données durant la campagne, et ralentit la transmission des rapports, ce qui peut affecter le suivi sanitaire national.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Présentation</h2>
+                <p><span class="highlight">SmartVacc</span> est une application mobile innovante qui accompagne le vétérinaire sur le terrain de la collecte des données jusqu'à la génération des rapports officiels. Elle est pensée pour s'adapter aux réalités marocaines (zones hors réseau, exigences ONSSA, contraintes terrain).</p>
+            </div>
+            
+            <div class="section">
+                <h2>Fonctionnalités</h2>
+                <ul>
+                    <li>Saisie hors-ligne avec synchronisation automatique</li>
+                    <li>Lecture OCR intelligente des CNIEs et boucles bovines</li>
+                    <li>Cartographie par douar et commune avec géolocalisation</li>
+                    <li>Statistiques détaillées et reporting en temps réel</li>
+                    <li>Exports conformes ONSSA en Word et Excel</li>
+                    <li>Sécurisation et historisation des données</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Avantages</h2>
+                <ul>
+                    <li>Gain de temps important sur le terrain</li>
+                    <li>Réduction des erreurs de saisie</li>
+                    <li>Dépôt plus rapide des dossiers de rétributions et paiements plus fluides</li>
+                    <li>Meilleure supervision de la couverture sanitaire</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Perspectives futures</h2>
+                <ul>
+                    <li>Intégration de l'identification ovine</li>
+                    <li>Extension à d'autres espèces</li>
+                    <li>Gestion d'équipe et du stock de vaccin</li>
+                    <li>Cartographie avancée (chemin le plus court, éleveurs environnants)</li>
+                    <li>Module statistique national pour des données toujours à jour</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Contact</h2>
+                <p>Dr Agbani Ayman<br>
+                Fondateur SmartVacc<br>
+                0682302525 — agbani.ayman99@gmail.com</p>
+            </div>
+        </div>
+        
+        <div class="images-column">
+            <div class="image-container">
+                <img src="assets/images/Map3.jpeg" alt="Cartographie SmartVacc - Vue 1">
+                <div class="image-caption">Cartographie et géolocalisation</div>
+            </div>
+            
+            <div class="image-container">
+                <img src="assets/images/Map4.jpeg" alt="Cartographie SmartVacc - Vue 2">
+                <div class="image-caption">Suivi des campagnes par zone</div>
+            </div>
+            
+            <div class="image-container">
+                <img src="assets/images/Report1.png" alt="Rapports SmartVacc - Vue 1">
+                <img src="assets/images/Report2.png" alt="Rapports SmartVacc - Vue 2" style="margin-top: 30px;">
+                <div class="image-caption">Génération automatique des rapports</div>
+            </div>
+            
+            <div class="image-container">
+                <img src="assets/images/Stats1.jpeg" alt="Statistiques SmartVacc">
+                <div class="image-caption">Analyses et statistiques en temps réel</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        © 2025 SmartVacc
+    </div>
+</body>
+</html> 
