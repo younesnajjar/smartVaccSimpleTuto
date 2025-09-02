@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/versions", "destination": "/versions.json" }
+  ],
+  "headers": [
+    {
+      "source": "/versions",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=60, must-revalidate" }
+      ]
+    }
+  ]
+}
