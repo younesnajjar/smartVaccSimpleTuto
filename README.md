@@ -1,4 +1,24 @@
 
+# Manuel Utilisateur SmartVacc
+
+## Table des Matières
+- [Introduction](#introduction)
+- [Mise en Service](#mise-en-service)
+- [Fonctions Principales](#fonctions-principales)
+  - [Création de campagne](#création-de-campagne)
+  - [Création d'un Douar](#création-dun-douar)
+  - [Création d'un éleveur](#création-dun-éleveur)
+  - [Filtrer et modifier](#filtrer-et-modifier)
+  - [Synchronisation des Données](#synchronisation-des-données)
+  - [Génération de Rapports](#génération-de-rapports)
+  - [Cartographie](#cartographie)
+  - [Statistiques](#statistiques)
+- [Confidentialité](#confidentialité)
+- [Assistance Technique](#assistance-technique)
+- [Questions Fréquentes](#questions-fréquentes)
+
+---
+
 # Introduction
 Nous vous souhaitons la bienvenue dans le manuel utilisateur de SmartVacc, la solution innovante dédiée à la digitalisation des campagnes de vaccination vétérinaire. Notre application est conçue pour enregistrer avec précision les données relatives aux vaccinations animales, simplifier la génération de rapports et de statistiques, tout en minimisant les marges d'erreur.
 
