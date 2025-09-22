@@ -22,9 +22,6 @@
 # Introduction
 Nous vous souhaitons la bienvenue dans le manuel utilisateur de SmartVacc, la solution innovante dédiée à la digitalisation des campagnes de vaccination vétérinaire. Notre application est conçue pour enregistrer avec précision les données relatives aux vaccinations animales, simplifier la génération de rapports et de statistiques, tout en minimisant les marges d'erreur.
 
-
----
-
 # Mise en Service
 
 Suivez ces instructions pour débuter avec SmartVacc :
@@ -92,7 +89,31 @@ NB: Vous pouvez soit prendre le temps de renseigner tous vos douars avant le com
 
 🎬 [Voir le tutoriel vidéo Éleveur](https://youtube.com/shorts/apkRdytFyTM?feature=share)
 
----
+### Recommendations selon l'excel SNIT
+
+1. Importer l’Excel :
+   - Utiliser l’ancien fichier Excel provenant de la base nationale.  
+   - Charger ce fichier dans l’application.  
+
+2. Recommandations lors de la saisie :
+   - Lors de l’entrée d’un éleveur ou de sa CIN, l’application propose des suggestions automatiques.  
+
+3. Gestion des anciens identifiants (boucles) :
+   - L’application affiche les anciens tags liés à l’éleveur.  
+   - Sélectionner ceux qui sont toujours présents.  
+  
+NB: L’Excel est importé en local. Vous devrez donc refaire l’opération pour chaque appareil utilisé pendant la campagne.
+
+🎬 [Voir le tutoriel vidéo Éleveur](https://youtube.com/shorts/wwQCg7tIzW0?feature=share)
+
+### Retrouver l'éleveur utilisant une boucle
+
+1. Accéder à la recherche d’éleveurs (icone 'loupe' à droite de la CIN)  
+2. Entrer une partie du numéro de boucle.  
+3. L’application affiche les éleveurs correspondants.  
+4. Sélectionner l’éleveur voulu pour accéder à ses informations.  
+
+🎬 [Voir le tutoriel vidéo Éleveur](https://youtube.com/shorts/Bb0kXCc3MyU?feature=share)
 
 ### Filtrer et modifier
 
