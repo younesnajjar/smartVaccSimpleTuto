@@ -8,6 +8,8 @@
   - [Création de campagne](#)
   - [Création d'un Douar](#)
   - [Création d'un éleveur](#)
+  - [Recommendations selon l'excel SNIT](#)
+  - [Retrouver l'éleveur utilisant une boucle](#)
   - [Filtrer et modifier](#)
   - [Synchronisation des Données](#)
   - [Génération de Rapports](#)
@@ -229,7 +231,7 @@ Téléphone: 07 08 66 96 40
 Q : Comment réinitialiser mon mot de passe ?  
 A : Sur la page de login, cliquez sur « Forgot password » et suivez les étapes indiquées.  
 
-Q : Est-ce que l'application peut marcher sans connexion ?  
+Q : Est-ce que l'application peut fonctionner sans connexion ?  
 A : Oui. Vous pouvez travailler même en cas de fluctuation ou d’absence d’internet.  
    - Il est possible de désactiver volontairement la connexion.  
    - Dans tous les cas, la synchronisation se fait automatiquement dès que le téléphone retrouve une connexion.  
