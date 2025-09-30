@@ -106,7 +106,7 @@ NB: Vous pouvez soit prendre le temps de renseigner tous vos douars avant le com
   
 NB: L’Excel est importé en local. Vous devrez donc refaire l’opération pour chaque appareil utilisé pendant la campagne.
 
-🎬 [Voir le tutoriel vidéo Éleveur](https://youtube.com/shorts/wwQCg7tIzW0?feature=share)
+🎬 [Voir le tutoriel Ancien excel SNIT](https://youtube.com/shorts/wwQCg7tIzW0?feature=share)
 
 ### Retrouver l'éleveur utilisant une boucle
 
@@ -115,7 +115,7 @@ NB: L’Excel est importé en local. Vous devrez donc refaire l’opération pou
 3. L’application affiche les éleveurs correspondants.  
 4. Sélectionner l’éleveur voulu pour accéder à ses informations.  
 
-🎬 [Voir le tutoriel vidéo Éleveur](https://youtube.com/shorts/Bb0kXCc3MyU?feature=share)
+🎬 [Voir en vidéo comment retrouver l'éleveur en utilisant une boucle](https://youtube.com/shorts/Bb0kXCc3MyU?feature=share)
 
 ### Filtrer et modifier
 
@@ -130,7 +130,25 @@ NB: L’Excel est importé en local. Vous devrez donc refaire l’opération pou
 🎬 [Voir le tutoriel vidéo Filtrer/Modifier](https://youtube.com/shorts/z6-FSVanLoE?feature=share)
 
 ---
+## Générateur de boucles
 
+1. Accéder au générateur :
+   - Paramètres → Générateur de boucles.  
+
+2. Créer un stock de boucles :
+   - Choisir la campagne.  
+   - Entrer la première et la dernière boucle de la série.  
+   - Générer toutes les boucles intermédiaires.  
+   - Un stock est créé et peut être consulté pour connaître le nombre de boucles restantes.  
+
+3. Utilisation lors de la vaccination :
+   - Catégories concernées : « Vaccinés et identifiés » et « Identifiés ».  
+   - L’application propose des recommandations de boucles depuis le stock.  
+   - Sélectionner les boucles à attribuer à l’éleveur.  
+   - Le stock se met automatiquement à jour après chaque attribution.
+     
+🎬 [Voir le tutoriel vidéo Génération de boucles](https://youtube.com/shorts/fL5cY44mcrI?feature=share)
+---  
 ## Synchronisation des Données
 
 1. Accéder à la page contenant la liste des éleveurs.  
@@ -222,7 +240,7 @@ SmartVacc respecte la confidentialité de vos informations et ne les partage jam
 
 Pour toute difficulté technique ou besoin d'assistance, notre équipe de support est à votre service.  
 mail : support@smartvacc.com  
-Téléphone: 07 08 66 96 40  
+Téléphone: 0682302525
 
 ---
 
