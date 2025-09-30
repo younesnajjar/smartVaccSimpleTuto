@@ -11,6 +11,7 @@
   - [Recommendations selon l'excel SNIT](#)
   - [Retrouver l'éleveur utilisant une boucle](#)
   - [Filtrer et modifier](#)
+  - [Générateur de boucles]
   - [Synchronisation des Données](#)
   - [Génération de Rapports](#)
   - [Cartographie](#)
@@ -148,6 +149,7 @@ NB: L’Excel est importé en local. Vous devrez donc refaire l’opération pou
    - Le stock se met automatiquement à jour après chaque attribution.
      
 🎬 [Voir le tutoriel vidéo Génération de boucles](https://youtube.com/shorts/fL5cY44mcrI?feature=share)
+
 ---  
 ## Synchronisation des Données
 
