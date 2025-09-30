@@ -2,23 +2,23 @@
 # Manuel Utilisateur SmartVacc
 
 ## Table des Matières
-- [Introduction](#)
-- [Mise en Service](#)
-- [Fonctions Principales](#)
-  - [Création de campagne](#)
-  - [Création d'un Douar](#)
-  - [Création d'un éleveur](#)
-  - [Recommendations selon l'excel SNIT](#)
-  - [Retrouver l'éleveur utilisant une boucle](#)
-  - [Filtrer et modifier](#)
+- [Introduction]
+- [Mise en Service]
+- [Fonctions Principales]
+  - [Création de campagne]
+  - [Création d'un Douar]
+  - [Création d'un éleveur]
+  - [Recommendations selon l'excel SNIT]
+  - [Retrouver l'éleveur utilisant une boucle]
+  - [Filtrer et modifier]
   - [Générateur de boucles]
-  - [Synchronisation des Données](#)
-  - [Génération de Rapports](#)
-  - [Cartographie](#)
-  - [Statistiques](#)
-- [Confidentialité](#)
-- [Assistance Technique](#)
-- [Questions Fréquentes](#)
+  - [Synchronisation des Données]
+  - [Génération de Rapports]
+  - [Cartographie]
+  - [Statistiques]
+- [Confidentialité]
+- [Assistance Technique]
+- [Questions Fréquentes]
 
 ---
 
